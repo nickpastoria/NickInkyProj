@@ -1,3 +1,4 @@
+VAR numInterrogated = 0
 ->Intro
 === Intro ===
 * The time was 9 o'clock pm last night.
@@ -24,14 +25,37 @@
     ->Suspects
 * ->
     One of them must of have taken the cookie! But who?
+->InterrogationMenu
 
+=== InterrogationMenu ===
+{numInterrogated == 0:Who should I interrogate first? | Who should I interrogate next?}
+* Dad
+    -> Dad
+* Maddy
+    -> Maddy
+* Ms Goaty
+    -> MsGoaty
+* ->
+    I've interrogated everyone! Time to name the culprit
+    ->Ending
 ->END
+
+=== function startInterrogation ===
+~numInterrogated += 1
+
+
 
 === Maddy ===
-->END
+{startInterrogation()}
+->InterrogationMenu
 
 === Dad ===
-->END
+{startInterrogation()}
+->InterrogationMenu
 
 === MsGoaty ===
+{startInterrogation()}
+->InterrogationMenu
+
+=== Ending ===
 ->END
