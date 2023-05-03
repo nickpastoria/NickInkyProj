@@ -1,3 +1,8 @@
+INCLUDE Maddy.ink
+INCLUDE Dad.ink
+INCLUDE MsGoaty.ink
+
+
 VAR numInterrogated = 0
 ->Intro
 === Intro ===
@@ -42,20 +47,6 @@ VAR numInterrogated = 0
 
 === function startInterrogation ===
 ~numInterrogated += 1
-
-
-
-=== Maddy ===
-{startInterrogation()}
-->InterrogationMenu
-
-=== Dad ===
-{startInterrogation()}
-->InterrogationMenu
-
-=== MsGoaty ===
-{startInterrogation()}
-->InterrogationMenu
 
 === Ending ===
 ->END
