@@ -5,7 +5,7 @@
         * * * Snickerdoodle.
             I Love Snickerdoodle.
             * * * * [The Crime]
-                I made sure to save on extra snickerdoodle cookie for after school today.
+                I made sure to save an extra snickerdoodle cookie for after school today.
                 * * * * * THE COOKIE IS GONE!
                     * * * * * * The Suspects
                     There were only three people around who saw me hide the cookie.
@@ -17,10 +17,10 @@
     My prime suspect. He also loves snickerdoodle cookies.
     ->Suspects
 * Maddy
-    My dog. I told her where I hid the cookie just in-case I forgot where I put it.
+    My dog. I told her where I hid the cookie just in-case I forgot where I put it. She is great at keeping secrets.
     ->Suspects
 * Ms. Goaty
-    She was sitting on the counter with my mom and I when we were baking. She would have seen me put the cookie away.
+    She was sitting on the counter with my mom and I when we were baking. She would have seen me hide the cookie away.
     ->Suspects
 * ->
     One of them must of have taken the cookie! But who?
