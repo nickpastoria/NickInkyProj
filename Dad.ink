@@ -8,11 +8,20 @@ Hey there, chum! What's wrong?
     It wasn't me, I had my fill yesterday!
 
 * * * Then who else could it be!
-
+    {numInterrogated == 0:
     I don't know...But why don't we try to figure this out together, chum?
+    -> workwithDad
+  - else:
+    Have you asked Mom?
+    -> momPath
+}
 
+=== workwithDad ===
 * * * * Alright...
     ~numInterrogated += 1
     -> InterrogationMenu
+
+=== momPath ===
+    -> Mom
 
 -> END
