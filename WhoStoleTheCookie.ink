@@ -42,7 +42,7 @@ VAR numInterrogated = 0
     -> MsGoaty
 * ->
     I've interrogated everyone! Time to name the culprit
-    ->Ending
+    -> Ending
 ->END
 
 === function startInterrogation ===
