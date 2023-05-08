@@ -9,9 +9,10 @@ Hey there, chum! What's wrong?
 
 * * * Then who else could it be!
 
-- I don't know...But why don't we try to figure this out together, chum?
+    I don't know...But why don't we try to figure this out together, chum?
 
 * * * * Alright...
+    ~numInterrogated += 1
     -> InterrogationMenu
 
 -> END
