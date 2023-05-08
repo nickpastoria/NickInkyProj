@@ -22,6 +22,7 @@ Hey there, chum! What's wrong?
     -> InterrogationMenu
 
 === momPath ===
+Oh...
     -> Mom
 
 -> END

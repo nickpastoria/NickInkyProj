@@ -1,7 +1,7 @@
 === MsGoaty ===
 {numInterrogated == 2:
     ...Who do you think did it Ms. Goaty?
-
+    -> momPath
   - else:
     I trusted you, Ms. Goaty- Was I wrong to do that?
     -> nextPerson
