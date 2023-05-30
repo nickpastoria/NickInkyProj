@@ -1,9 +1,8 @@
 === Dad ===
-#IMAGE: dad1.png
 Hey there, chum! What's wrong?
 
 * Why don't you tell me, Dad...or should I say, Thief!
-    Woah! I never stole anything.
+    Woah! What are you talking about kiddo?
     
 * * Don't try to lie to me, Dad! I know you stole the cookie that I saved for school!
     It wasn't me, I had my fill yesterday!
@@ -15,7 +14,7 @@ Hey there, chum! What's wrong?
   - else:
     Have you asked Mom?
     -> momPath
-}
+    }
 
 === workwithDad ===
 * * * * Alright...

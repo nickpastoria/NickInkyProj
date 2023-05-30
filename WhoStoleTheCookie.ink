@@ -18,12 +18,13 @@ VAR numInterrogated = 0
                     -> Suspects
 
 === Suspects ===
-
-* Dad
+These are the suspects:
+* [Dad] 
     My prime suspect. He also loves snickerdoodle cookies.
     ->Suspects
-* Maddy
-    My dog. I told her where I hid the cookie just in-case I forgot where I put it. She is great at keeping secrets.
+    
+* [Maddy]
+    My dog. I told her where I hid the cookie just in-case I forgot where I put it. She is great at keeping secret.
     ->Suspects
 * ->
     One of them must of have taken the cookie! But who?
