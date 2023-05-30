@@ -8,7 +8,6 @@ INCLUDE Mom.ink
 VAR numInterrogated = 0
 ->Intro
 === Intro ===
-#IMAGE: dad1.png
 * The time was 9 o'clock pm last night.
     * * Mom and I had baked a fresh batch of my favorite cookies.
         * * * Snickerdoodle.

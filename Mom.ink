@@ -1,4 +1,6 @@
 === MOM ===
+#IMAGE: mom1.png
+#IMAGE: dad2.png
 -  "Hey there sweetheart, hi honey. What are you two up to?"
     * [I need to talk to you.] "Of course, darling. What's on your mind?"
         * * [About cookies.] "Cookies, is it? Has something happened to your cookie stash?"
