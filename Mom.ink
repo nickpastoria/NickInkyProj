@@ -1,5 +1,5 @@
 === MOM ===
-* [MOM!] "Hey there sweetheart, hi honey. What are you two up to?"
+-  "Hey there sweetheart, hi honey. What are you two up to?"
     * [I need to talk to you.] "Of course, darling. What's on your mind?"
         * * [About cookies.] "Cookies, is it? Has something happened to your cookie stash?"
             * * * [Yes, my snickerdoodle is gone!] "Your special snickerdoodle? Oh no, that's terrible! That was your favorite, wasn't it?"
