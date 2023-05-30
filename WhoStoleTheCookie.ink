@@ -27,9 +27,6 @@ VAR numInterrogated = 0
 * Maddy
     My dog. I told her where I hid the cookie just in-case I forgot where I put it. She is great at keeping secrets.
     ->Suspects
-// * Ms. Goaty
-//     She was sitting on the counter with my mom and I when we were baking. She would have seen me hide the cookie away.
-//     ->Suspects
 * ->
     One of them must of have taken the cookie! But who?
 ->InterrogationMenu
@@ -40,8 +37,6 @@ VAR numInterrogated = 0
     -> Dad
 * Maddy
     -> Maddy
-* Ms Goaty
-    -> MsGoaty
 * ->
     I've interrogated everyone! Time to name the culprit
     -> Ending
