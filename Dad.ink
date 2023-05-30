@@ -23,6 +23,6 @@ Hey there, chum! What's wrong?
 
 === momPath ===
 Oh...
-    -> Mom
+    -> MOM
 
 -> END
