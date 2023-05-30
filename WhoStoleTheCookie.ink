@@ -1,8 +1,6 @@
 INCLUDE Maddy.ink
 INCLUDE Dad.ink
-INCLUDE MsGoaty.ink
 INCLUDE Mom.ink
-
 
 
 VAR numInterrogated = 0
