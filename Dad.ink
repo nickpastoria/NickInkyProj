@@ -1,10 +1,5 @@
 === Dad ===
-<<<<<<< HEAD
-#IMAGE: dad1.png
-- Hey there, chum! What's wrong?
-=======
 Hey there, chum! What's wrong?
->>>>>>> ba9640cb8d3e9f15e97998db4ed84fb63475347e
 
 * Why don't you tell me, Dad...or should I say, Thief!
     Woah! What are you talking about kiddo?

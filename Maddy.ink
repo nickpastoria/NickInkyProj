@@ -1,5 +1,4 @@
 === Maddy ===
-#IMAGE: dog1.png
 WOOF!
 
 * Maddy!
