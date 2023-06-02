@@ -1,6 +1,6 @@
 === Dad ===
 Hey there, chum! What's wrong?
-
+#IMAGE: Images/Dad2.png
 * Why don't you tell me, Dad...or should I say, Thief!
     Woah! What are you talking about kiddo?
     

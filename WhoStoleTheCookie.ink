@@ -60,13 +60,15 @@ So who did it?
 * Dad
     "Haha you got me! I was super hungry this morning and couldn't help myself! That's why I bought this whole new box of cookies home from the bakery!
     I love you!"
-    #Images/DadWithCookies.png
+    #IMAGE: Images/DadWithCookies.png
     ->END
 * Mom
     "Haha it wasn't me darling. Good guess though!"
+    #IMAGE: Images/Mom3.png
     ->Ending
 * [Maddy]
     Woof!
+    #IMAGE: Images/Maddy3.png
     (Mom): "I don't think it was Maddy dear."
     (Mom): "Guess again!"
     ->Ending
