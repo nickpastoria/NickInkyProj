@@ -4,7 +4,7 @@ INCLUDE Mom.ink
 
 
 VAR numInterrogated = 0
-->Intro
+->Ending
 === Intro ===
     
 * The time was 9 o'clock pm last night.
@@ -67,4 +67,18 @@ These are the suspects:
 ~numInterrogated += 1
 
 === Ending ===
+So who did it?
+* Dad
+    "Haha you got me! I was super hungry this morning and couldn't help myself! That's why I bought this whole new box of cookies home from the bakery!
+    I love you!"
+    #Images/DadWithCookies.png
+    ->END
+* Mom
+    "Haha it wasn't me darling. Good guess though!"
+    ->Ending
+* [Maddy]
+    Woof!
+    (Mom): "I don't think it was Maddy dear."
+    (Mom): "Guess again!"
+    ->Ending
 ->END
