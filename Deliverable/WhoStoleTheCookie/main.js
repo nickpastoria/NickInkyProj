@@ -96,6 +96,7 @@
 
                 // IMAGE: src
                 if( splitTag && splitTag.property == "IMAGE" ) {
+console.log("tried to make image")
                     var imageElement = document.createElement('img');
                     imageElement.src = splitTag.val;
                     storyContainer.appendChild(imageElement);
@@ -191,7 +192,7 @@
         // Extend height to fit
         // We do this manually so that removing elements and creating new ones doesn't
         // cause the height (and therefore scroll) to jump backwards temporarily.
-        storyContainer.style.height = contentBottomEdgeY()+"px";
+        storyContainer.style.height = contentBottomEdgeY()+ 500+"px";
 
         if( !firstTime )
             scrollDown(previousBottomEdge);
@@ -209,7 +210,7 @@
         continueStory(true);
 
         outerScrollContainer.scrollTo(0, 0);
-    }
+    }	
 
     // -----------------------------------
     // Various Helper functions

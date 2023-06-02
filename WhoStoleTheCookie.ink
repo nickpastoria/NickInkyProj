@@ -6,6 +6,7 @@ INCLUDE Mom.ink
 VAR numInterrogated = 0
 ->Intro
 === Intro ===
+    
 * The time was 9 o'clock pm last night.
     * * Mom and I had baked a fresh batch of my favorite cookies.
         * * * Snickerdoodle.
@@ -19,13 +20,23 @@ VAR numInterrogated = 0
 
 === Suspects ===
 These are the suspects:
+
 * [Dad] 
+
+    #IMAGE: Images/dad1.png
+
     My prime suspect. He also loves snickerdoodle cookies.
+    
     ->Suspects
     
 * [Maddy]
-    My dog. I told her where I hid the cookie just in-case I forgot where I put it. She is great at keeping secret.
+    
+    #IMAGE: Images/dog1.png
+    
+    My dog. I told her where I hid the cookie just in-case I forgot where I put it. She is great
+    keeping secrets.
     ->Suspects
+
 * ->
     One of them must of have taken the cookie! But who?
 ->InterrogationMenu
