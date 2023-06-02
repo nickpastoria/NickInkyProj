@@ -23,7 +23,7 @@ These are the suspects:
 
 * [Dad] 
 
-    #IMAGE: Images/dad1.png
+    #IMAGE: Images/dad2.png
 
     My prime suspect. He also loves snickerdoodle cookies.
     
@@ -42,14 +42,25 @@ These are the suspects:
 ->InterrogationMenu
 
 === InterrogationMenu ===
-{numInterrogated == 0: Who should I interrogate first? | Who should I interrogate next?}
+// {numInterrogated == 0: Dad is home- Interrogate him!}
+// {numInterrogated == 1: Maddy is the only one who's left!}
+// {numInterrogated == 2: Wait, Mom is home!}
+// {numInterrogated == 0: Who should I interrogate first?| Who should I interrogate next?}
+{numInterrogated < 2:
+    Who should I interrogate?
+  - else:
+    Mom would know the answer!
+    * Mom
+    -> MOM
+}
+
 * Dad
     -> Dad
 * Maddy
     -> Maddy
-* ->
-    I've interrogated everyone! Time to name the culprit
-    -> Ending
+// * ->
+//     No one is left, who could it be?
+//     ->Ending
 ->END
 
 === function startInterrogation ===

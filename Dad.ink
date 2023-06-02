@@ -1,4 +1,5 @@
 === Dad ===
+#IMAGE: Images/dad1/png
 Hey there, chum! What's wrong?
 
 * Why don't you tell me, Dad...or should I say, Thief!
