@@ -4,7 +4,7 @@ from PIL import Image
 # directory containing the images
 input_dir = 'Deliverable\WhoStoleTheCookie\Images\Original Size'
 # directory to save the downscaled images
-output_dir = 'Deliverable\WhoStoleTheCookie\Images\'
+output_dir = 'Deliverable\WhoStoleTheCookie\Images'
 
 if not os.path.exists(output_dir):
     os.mkdir(output_dir)

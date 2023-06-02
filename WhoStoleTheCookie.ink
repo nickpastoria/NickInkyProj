@@ -4,7 +4,7 @@ INCLUDE Mom.ink
 
 
 VAR numInterrogated = 0
-->Ending
+->Intro
 === Intro ===
     
 * The time was 9 o'clock pm last night.
@@ -23,7 +23,7 @@ These are the suspects:
 
 * [Dad] 
 
-    #IMAGE: Images/dad2.png
+    #IMAGE: Images/dad1.png
 
     My prime suspect. He also loves snickerdoodle cookies.
     
@@ -42,25 +42,14 @@ These are the suspects:
 ->InterrogationMenu
 
 === InterrogationMenu ===
-// {numInterrogated == 0: Dad is home- Interrogate him!}
-// {numInterrogated == 1: Maddy is the only one who's left!}
-// {numInterrogated == 2: Wait, Mom is home!}
-// {numInterrogated == 0: Who should I interrogate first?| Who should I interrogate next?}
-{numInterrogated < 2:
-    Who should I interrogate?
-  - else:
-    Mom would know the answer!
-    * Mom
-    -> MOM
-}
-
+{numInterrogated == 0: Who should I interrogate first? | Who should I interrogate next?}
 * Dad
     -> Dad
 * Maddy
     -> Maddy
-// * ->
-//     No one is left, who could it be?
-//     ->Ending
+* ->
+    I've interrogated everyone! Time to name the culprit
+    -> Ending
 ->END
 
 === function startInterrogation ===
