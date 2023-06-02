@@ -2,9 +2,9 @@ import os
 from PIL import Image
 
 # directory containing the images
-input_dir = 'Deliverable\WhoStoleTheCookie\Images'
+input_dir = 'Deliverable\WhoStoleTheCookie\Images\Original Size'
 # directory to save the downscaled images
-output_dir = os.path.join(input_dir, 'downscaled')
+output_dir = 'Deliverable\WhoStoleTheCookie\Images\'
 
 if not os.path.exists(output_dir):
     os.mkdir(output_dir)
