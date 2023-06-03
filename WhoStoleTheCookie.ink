@@ -1,13 +1,49 @@
 INCLUDE Maddy.ink
 INCLUDE Dad.ink
 INCLUDE Mom.ink
+/* ---------------------------------
+
+Copy Pasteable stats block
+
+* {Stats.Curious}
+* {Stats.Fun}
+* {Stats.Mischevious}
+* {Stats.Creative}
+* {Stats.Stoic}
+
+ ----------------------------------*/
+
 
 
 VAR numInterrogated = 0
 VAR momGreeting = 0
+->Stats
+=== Stats ===
+What kind of child do you want to be?
+* Curious
+->Stats.Curious
+* Fun
+->Stats.Fun
+* Mischevious
+->Stats.Mischevious
+* Creative
+->Stats.Creative
+* Stoic
+->Stats.Stoic
+
+= Curious
 ->Intro
+= Fun
+->Intro
+= Mischevious
+->Intro
+= Creative
+->Intro
+= Stoic
+->Intro
+->Intro
+
 === Intro ===
-    
 * The time was 9 o'clock pm last night.
     * * Mom and I had baked a fresh batch of my favorite cookies.
         * * * Snickerdoodle.
@@ -34,8 +70,7 @@ These are the suspects:
     
     #IMAGE: Images/dog1.png
     
-    My dog. I told her where I hid the cookie just in-case I forgot where I put it. She is great
-    keeping secrets.
+    My dog. I told her where I hid the cookie just in-case I forgot where I put it. She is great at keeping secrets.
     ->Suspects
 
 * ->
@@ -50,7 +85,7 @@ These are the suspects:
     {numInterrogated == 0: Who should I interrogate first? | Who should I interrogate next?}
 }
 
-* Dad
+* {not Dad}Dad
     -> Dad
 * Maddy
     -> Maddy
