@@ -4,6 +4,7 @@ INCLUDE Mom.ink
 
 
 VAR numInterrogated = 0
+VAR momGreeting = 0
 ->Intro
 === Intro ===
     
@@ -42,7 +43,13 @@ These are the suspects:
 ->InterrogationMenu
 
 === InterrogationMenu ===
-{numInterrogated == 0: Who should I interrogate first? | Who should I interrogate next?}
+{numInterrogated == 2:
+    * Mom
+    -> MOM
+  - else:
+    {numInterrogated == 0: Who should I interrogate first? | Who should I interrogate next?}
+}
+
 * Dad
     -> Dad
 * Maddy
