@@ -23,6 +23,8 @@ WOOF!
 -> Maddy_Questions.Creative
 * {Stats.Stoic} Stare Maddy down without saying anything.
 -> Maddy_Questions.Stoic
+* Leave Maddy
+ -> InterrogationMenu
 
 === Maddy_Questions ===
 = where_were_you
