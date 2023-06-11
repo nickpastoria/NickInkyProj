@@ -29,7 +29,13 @@ WOOF!
 === Maddy_Questions ===
 = where_were_you
     Woof!
-    - Drats! Right, I was playing with you this morning! That doesn't help me
+    {dadFirst == 1:
+    Drats! Right, I was playing with you this morning! That doesn't help me
+    
+    It's alright, chum, why don't you ask Maddy another question?
+    - else:
+    Drats! Right, I was playing with you this morning! That doesn't help me
+    }
 -> Maddy_Loop
 = trust_each_other
     Woof!

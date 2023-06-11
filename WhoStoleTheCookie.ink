@@ -17,6 +17,15 @@ Copy Pasteable stats block
 
 VAR numInterrogated = 0
 VAR momGreeting = 0
+VAR dadFirst = 0
+VAR maddyFirst = 0
+//-------callbacks in Dad--------
+VAR whereWhereYou = 0
+VAR didYouEat = 0
+VAR whatDoYouKnow = 0
+VAR youJustLeft = 0
+VAR somewhereSpecial = 0
+//---------------------
 ->Stats
 === Stats ===
 What kind of child do you want to be?
@@ -102,8 +111,14 @@ So who did it?
 * Dad
     "Haha you got me! I was super hungry this morning and couldn't help myself! That's why I bought this whole new box of cookies home from the bakery!
     I love you!"
+    {somewhereSpecial == 1:
+    oh! This was the surprise you mentioned earlier!
     #IMAGE: Images/DadWithCookies.png
     ->END
+    -else:
+    #IMAGE: Images/DadWithCookies.png
+    ->END
+    }
 * Mom
     "Haha it wasn't me darling. Good guess though!"
     #IMAGE: Images/Mom3.png

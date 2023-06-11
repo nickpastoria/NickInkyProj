@@ -1,6 +1,9 @@
-
 === Dad ===
+{maddyFirst == 1:
+Hey there, chum! Hi Maddy! What's wrong?
+-else:
 Hey there, chum! What's wrong?
+}
 ->DadRestart
 === DadRestart ===
 #IMAGE: Images/Dad2.png
@@ -9,6 +12,7 @@ Hey there, chum! What's wrong?
 *  {Dad_Choices.where_were_you} So you just left for work without eating breakfast, sounds like a great time to nab a cookie.
     ->Dad_Choices.you_just_left
 * {Dad_Choices.you_just_left} Somewhere special?
+            ~somewhereSpecial = 1
             Yeah it's a surprise that I'll tell you about later.
             ->DadRestart
 * Did you eat my cookie?
@@ -35,16 +39,29 @@ Hey there, chum! What's wrong?
 
 === Dad_Choices ===
 = where_were_you
+~whereWhereYou = 1
 I woke up this morning, I had to leave super quick so I didn't even have time to make breakfast.
 ->DadRestart
-= you_just_left 
-Yeah I just headed straight to work. I've been starving all day! But I did get the chance to stop somewhere special on the way home.
+= you_just_left
+~youJustLeft = 1
+Yeah I just headed straight to work. I've been starving all day! But I did get the chance to stop somewhere special on
+the way home.
 ->DadRestart
 = did_you_eat
+~didYouEat = 1
+{whatDoYouKnow == 1:
+Chum, I just told you I had some last night!
+- else:
 Eat your cookie? What cookie? I know you and mom baked some cookies last night, did you have a special one?
+}
 ->DadRestart
 = what_do_you_know
+~whatDoYouKnow = 1
+{didYouEat == 1:
+They were fantastic, chum! Thank you for sharing some with me last night.
+-else:
 I know you and mom made some cookies last night. They smelled really great, and they tasted even better. I had some remember?
+}
 ->DadRestart
 = Curious
 "Well, it sounds like a bit of a cookie mystery! I can't really say for sure since I wasn't there and I don't know your dad's habits. But, I can suggest a fun way to figure it out! Next time you have a cookie, maybe you could leave a tiny note near it saying, "Please don't eat this, it's my special cookie!" If your cookie still disappears, then it might be time to play detective and look for cookie crumbs! But remember, it's always important to communicate. You could also just ask your dad if he saw or ate the cookie. 😊"
@@ -92,7 +109,13 @@ Dad breaks the silence.
     }
 === workwithDad ===
 * Alright...
+    {maddyFirst == 1:
+    Alright, lets go. You too, Maddy come on!
+    -else:
+    Alright, lets go!
+    }
     ~numInterrogated += 1
+    ~dadFirst = 1
     -> InterrogationMenu
 
 === momPath ===

@@ -4,7 +4,7 @@
   - else:
     #IMAGE: Images/mom2.png
 }
--  "Hey there sweetheart, hi honey. What are you two up to?"
+-  "Hey there sweetheart. What are you up to?"
 -> Mom1
 ==Mom1==
 * [I need to talk to you.] "Of course, darling. What's on your mind?"
