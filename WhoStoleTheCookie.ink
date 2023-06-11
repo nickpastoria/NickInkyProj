@@ -52,7 +52,7 @@ What kind of child do you want to be?
                 I made sure to save an extra snickerdoodle cookie for after school today.
                 * * * * * THE COOKIE IS GONE!
                     * * * * * * The Suspects
-                    There were only three people around who saw me hide the cookie.
+                    There were only two people around who saw me hide the cookie.
                     -> Suspects
 
 === Suspects ===
