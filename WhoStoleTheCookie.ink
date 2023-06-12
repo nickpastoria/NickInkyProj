@@ -17,15 +17,20 @@ Copy Pasteable stats block
 
 VAR numInterrogated = 0
 VAR momGreeting = 0
+///------callbacks---------------
 VAR dadFirst = 0
 VAR maddyFirst = 0
 //-------callbacks in Dad--------
 VAR whereWhereYou = 0
 VAR didYouEat = 0
 VAR whatDoYouKnow = 0
-VAR youJustLeft = 0
+VAR youJustLeft = 0 //in Mom too
 VAR somewhereSpecial = 0
-//---------------------
+//-------------------------------
+VAR trustInMaddy = 0
+VAR mischeviousMaddy = 0
+//---------end callbacks---------
+
 ->Stats
 === Stats ===
 What kind of child do you want to be?
@@ -112,7 +117,7 @@ So who did it?
     "Haha you got me! I was super hungry this morning and couldn't help myself! That's why I bought this whole new box of cookies home from the bakery!
     I love you!"
     {somewhereSpecial == 1:
-    oh! This was the surprise you mentioned earlier!
+    This must be the surprise you mentioned earlier!
     #IMAGE: Images/DadWithCookies.png
     ->END
     -else:
@@ -125,8 +130,13 @@ So who did it?
     ->Ending
 * [Maddy]
     Woof!
+    {trustInMaddy == 1:
+    I knew it wouldn't be you, Maddy. We trust each other, remember?
+    #IMAGE: Images/Maddy3.png
+    -else:
     #IMAGE: Images/Maddy3.png
     (Mom): "I don't think it was Maddy dear."
     (Mom): "Guess again!"
     ->Ending
+    }
 ->END

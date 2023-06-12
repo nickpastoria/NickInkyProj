@@ -32,12 +32,13 @@ WOOF!
     {dadFirst == 1:
     Drats! Right, I was playing with you this morning! That doesn't help me
     
-    It's alright, chum, why don't you ask Maddy another question?
+    It's alright, chum, why don't you ask Maddy a few more questions?
     - else:
     Drats! Right, I was playing with you this morning! That doesn't help me
     }
 -> Maddy_Loop
 = trust_each_other
+    ~trustInMaddy = 1
     Woof!
     - Ok good. I'm glad, I knew we could trust each other.
 -> Maddy_Loop
@@ -57,6 +58,7 @@ Hmm, it does seem like she likes finding crumbs...
 You and Maddy run out to the backyard and play catch for a while till you both are tired. You had a great time!
 ->Maddy_Loop
 = Mischevious
+~mischeviousMaddy = 1
 Maddy tilts her head curiously at you. You decide to take your hand and cover it in cinnamon. She sniffs your hand then you have her follow you to your dad.
 Upon seeing your Dad Maddy Jumps up and starts barking!
 Interesting...

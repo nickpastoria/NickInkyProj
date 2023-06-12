@@ -71,6 +71,17 @@ Drats! Thats a good idea... for next time. But I still need to find the answer n
 Ahh. Sorry bud. I'm actually super busy, and don't have a taste for cookies today.
  ->DadRestart
 = Mischevious
+{mischeviousMaddy == 1:
+You yell! "You! YOU! I know it was you who took my cookie!"
+Dad looks at you with a shocked expression on his face.
+"I'm sorry kiddo," he pleas. "I was really hungry this morning and I needed to grab something before I went to work."
+You stare at him! "I KNEW IT! I knew it because Maddy ran right up to you when I told her to track the scent of cinnamon!"
+"Oh gosh, chum, you're  too smart for your own good. I did plan on making it up to you though!"
+"That's why I bought this whole new box of cookies home from the bakery!
+    I love you!"
+    #IMAGE: Images/DadWithCookies.png
+    ->END
+-else:
 You yell! "You! YOU! I know it was you who took my cookie!"
 Dad looks at you with a shocked expression on his face.
 "I'm sorry kiddo," he pleas. "I was really hungry this morning and I needed to grab something before I went to work."
@@ -80,6 +91,7 @@ You stare at him! "I MADE IT UP! I didn't know it was you!"
     I love you!"
     #IMAGE: Images/DadWithCookies.png
     ->END
+}
 = Creative
 You leave the conversation for now to go and do your best drawing a wanted poster for your cookie.
 The sign says "My Cookie, Wanted! (Alive) 1 Hug Reward"

@@ -11,6 +11,7 @@
 * [I need to talk to you.] "Of course, darling. What's on your mind?"
 -> Mom23
 * [Just wanted to say hi.] "Well, hi there, darling. It's always nice to see you. Anything else on your mind?"
+-> Mom1
 ~momGreeting += 1
 -> Mom23
 * {Stats.Curious} What did you have for breakfast this morning?
@@ -29,9 +30,14 @@
 
 == Mom_Questions ==
 = Curious
-"Oh this morning I had corned beef hash. It's my favorite" (*EWWW*).
+"Oh this morning your father and I had corned beef hash. It's my favorite" (*EWWW*).
 That explains the awful smell this morning.
+{youJustLeft == 1: 
+* [What! But Dad told me he left without breakfast this morning!]
 ->Mom1
+- else:
+-> Mom1
+}
 = Fun
 Sorry hun. Not today unfortuntatley.
 * Aww why not?
@@ -61,6 +67,7 @@ Oh no.. You look really upset. I guess we'll have to bake another batch of cooki
 
 ==Mom23==
 * * [About cookies.] "Cookies, is it? Has something happened to your cookie stash?"
+    -> Mom4
 * * * [Yes, my snickerdoodle is gone!] "Your special snickerdoodle? Oh no, that's terrible! That was your favorite, wasn't it?"
     -> Mom4
 * * * [No, it's a different one.] "Oh, another one? Well, cookies do have a way of disappearing around here. Maybe you need to start an investigation."
@@ -69,10 +76,16 @@ Oh no.. You look really upset. I guess we'll have to bake another batch of cooki
 ==Mom4
 * * * * [Yes, and I've asked everyone else but they're clueless.] "That sounds like quite a mystery. Remember the time we couldn't find your toy truck and it was under the bed the whole time? Maybe it's something like that."
     -> Mom5
-* * * * [No, they all seem suspicious...] "Well, you know how it is with cookies. Everyone loves them. Maybe you need to ask a few more questions."
+* * * * [No, they all seem suspicious...] 
+    {dadFirst == 1:
+    "Well, you know how it is with cookies. Everyone loves them. Remember what your father always says, you might just need to ask a few more questions."
     -> Mom5
-
-==Mom5==                    
+    -else:
+    "Well, you know how it is with cookies. Everyone loves them. Maybe you need to ask a few more questions."
+    -> Mom5
+    }
+    
+==Mom5==
 * * * * * [Yes, I remember that...] "Well, sometimes things aren't as they seem, darling. By the way, have you asked your Dad about the cookie?"
     -> Mom6
 * * * * * [No, I don't remember that...] "It was a while ago, but it taught us to look a little harder and not jump to conclusions. Have you asked your Dad about the cookie?"
