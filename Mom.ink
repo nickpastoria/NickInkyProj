@@ -6,14 +6,13 @@
 }
 -  "Hey there sweetheart. What are you up to?"
 -> Mom1
+
 ==Mom1==
 * [I need to talk to you.] "Of course, darling. What's on your mind?"
 -> Mom23
 * [Just wanted to say hi.] "Well, hi there, darling. It's always nice to see you. Anything else on your mind?"
 ~momGreeting += 1
 -> Mom23
-
-== Mom_Loop ==
 * {Stats.Curious} What did you have for breakfast this morning?
 -> Mom_Questions.Curious
 * {Stats.Fun} MOM! Can we bake more cookies?
@@ -27,36 +26,37 @@
 * Leave Mom
  -> InterrogationMenu
 
+
 == Mom_Questions ==
 = Curious
 "Oh this morning I had corned beef hash. It's my favorite" (*EWWW*).
 That explains the awful smell this morning.
-->Mom_Loop
+->Mom1
 = Fun
 Sorry hun. Not today unfortuntatley.
 * Aww why not?
-    -> Mom_Loop
+    -> Mom1
     Oh I think you'll see soon enough.
 *... sigh... ok.
     Thanks hun.
-    -> Mom_Loop
-->Mom_Loop
+    -> Mom1
+->Mom1
 = Mischevious
 You grab a piece of paper and draw two circles on it. On the top you write, put an X over your favorite cookie.
 You label the two circles, Snickerdoodle, and All Other Cookies.
 You leave the piece of paper on the table with a pencil and wait a while.
 You come back after some time and see two x's over Snickerdoodle.
 You go back to Mom.
-->Mom_Loop
+->Mom1
 = Creative
 {Dad_Choices.Creative} You grab the wanted poster you showed to your Dad and bring it to Mom.
 {not Dad_Choices.Creative} You quickly grab your art supplies and draw a wanted poster for your missing cookie.
 You run up to mom holding the poster in her face.
 "Oh sweety. That's wonderful! You drew that all on your own! Lets go put that on the fridge and maybe the theif will show themselves."
-->Mom_Loop
+->Mom1
 = Stoic
 Oh no.. You look really upset. I guess we'll have to bake another batch of cookies soon. 
-->Mom_Loop
+->Mom1
 ->DONE
 
 ==Mom23==
