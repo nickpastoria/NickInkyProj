@@ -1,0 +1,25 @@
+List of Callbacks:
+
+
+mischeviousMaddy > Dad_Choices.Mischevious
+
+trustInMaddy > ===Ending===
+
+dadFirst > Mom4
+
+youJustLeft . Mom_Questions.curious
+
+Dad_Choices.Creative > Mom_Questions.Creative
+
+somewhereSpecial > Ending > Dad
+
+maddyFirst > ===workwithDad===
+
+maddyFirst > ===Dad===
+
+whatDoYouKnow > Dad_Choices.Did_you_eat
+
+didYouEat > Dad_Choices.what_do_you_know
+
+dadFirst > Maddy_Choices.where_where_you
+
