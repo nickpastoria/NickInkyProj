@@ -6,7 +6,7 @@ Hey there, chum! What's wrong?
 }
 ->DadRestart
 === DadRestart ===
-#IMAGE: Images/Dad2.png
+#IMAGE: Images/dad2.png
 * Where were you this morning?
     ->Dad_Choices.where_were_you
 *  {Dad_Choices.where_were_you} So you just left for work without eating breakfast, sounds like a great time to nab a cookie.

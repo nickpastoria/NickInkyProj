@@ -1,6 +1,6 @@
 === Maddy ===
 WOOF!
-#IMAGE : Images/Maddy2.png 
+#IMAGE : Images/maddy2.png 
 ~numInterrogated += 1
 -> Maddy_Loop
 

@@ -34,6 +34,7 @@ VAR mischeviousMaddy = 0
 ->Stats
 === Stats ===
 What kind of child do you want to be?
+#IMAGE: Images/protagonist.png
 * Curious
 ->Stats.Curious
 * Fun
@@ -126,15 +127,15 @@ So who did it?
     }
 * Mom
     "Haha it wasn't me darling. Good guess though!"
-    #IMAGE: Images/Mom3.png
+    #IMAGE: Images/mom3.png
     ->Ending
 * [Maddy]
     Woof!
     {trustInMaddy == 1:
     I knew it wouldn't be you, Maddy. We trust each other, remember?
-    #IMAGE: Images/Maddy3.png
+    #IMAGE: Images/maddy3.png
     -else:
-    #IMAGE: Images/Maddy3.png
+    #IMAGE: Images/maddy3.png
     (Mom): "I don't think it was Maddy dear."
     (Mom): "Guess again!"
     ->Ending
